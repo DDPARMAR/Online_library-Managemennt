@@ -1,0 +1,118 @@
+@font-face {
+    font-family: Satoshi;
+    src: url('ASSETS/FONTS/Satoshi-Regular.otf');
+    font-weight: normal;
+    font-style: normal;
+}
+
+*{
+    box-sizing: border-box;
+}
+body{
+    margin:0;
+    padding:0;
+}
+.main{
+    display: flex;
+    width:100vw;
+    height:95vh;
+    justify-content: center;
+    flex-wrap:wrap;
+}
+.form{
+    display: flex;
+    align-items: center;    
+
+}
+form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+form h1{
+    font-size:50px;
+    font-family: 'Satoshi', Arial, sans-serif;
+}
+form p{
+    font-size:18px;
+    font-family: 'Satoshi', Arial;
+    font-weight:200;
+}
+form input{
+    font-size:15px;
+    font-family: 'Satoshi', Arial;
+}
+form .form-field{
+    border:1px solid black;
+    display: flex;
+    align-items: center;
+    gap:20px;
+    height:50px;
+    padding:20px;
+    border-radius:30px;
+    margin-bottom:20px;
+}
+form .form-field input{
+    border:none;
+    padding:10px;
+    background-color:transparent;
+}
+.submit{
+    height:50px;
+    border-radius: 30px;
+    background-color: black;
+    color:white;
+    transition: 3 ease-in-out;
+}
+.submit:hover{
+    box-shadow: 0px 5px 5px grey;
+    cursor: pointer;
+    font-size: 17px;
+}
+form .form-field input:focus {
+    outline: none;  /* Removes the default outline */
+    border: none;   /* Removes the border */
+}
+form .field-container{
+    display: flex;
+    flex-direction: column;
+    margin:50px 0px 30px 0px;
+}
+.image-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.image-container img{
+    max-width:450px;
+    width:100%;
+    height:auto;
+    margin:auto 0px;
+}
+.bg-img{
+    display: none;
+}
+.redirect{
+    margin-top:30px;
+}
+.redirect a{
+    text-decoration: none;
+    color:#1f8c5b;
+}
+@media screen and (max-width: 768px){
+    .image-container{
+        display:none;
+    }
+
+    .bg-img{
+        width:95%;
+        display: block;
+    }
+
+    .bg-img{
+        z-index: -1;
+        position: absolute;
+        opacity: 0.3;
+    }
+}
